@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque - Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Pet Shop
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="banhoetosa.html">
+                            Banho e Tosa
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="estoque.html">
+                            Estoque
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="vacinacao.html">
+                            Vacinação
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">
+                            Ranking
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="atendimentos.html">
+                            Atendimentos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="estoque-minimalista container">
+
+        <div class="estoque-titulo text-center">
+
+            <h1>Controle de Estoque</h1>
+
+            <p>
+                Selecione o tipo de ração para verificar o estoque.
+            </p>
+
+            <img src="img/imagemdoestoque.png" alt="" class="imagem-estoque">
+
+        </div>
+
+        <div class="estoque-conteudo">
+
+            <h2>Escolha o tipo de ração</h2>
+
+            <div class="table-responsive">
+
+                <table class="table tabela-racao">
+
+                    <thead>
+
+                        <tr>
+                            <th>Selecionar</th>
+                            <th>Tipo de ração</th>
+                            <th>Quantidade mínima</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="produto" value="Ração Premium">
+                            </td>
+
+                            <td>Ração Premium</td>
+
+                            <td>40</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="produto" value="Ração Simples">
+                            </td>
+
+                            <td>Ração Simples</td>
+
+                            <td>50</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="produto" value="Ração Comum">
+                            </td>
+
+                            <td>Ração Comum</td>
+
+                            <td>100</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="quantidade" class="form-label">
+                    Quantidade atual:
+                </label>
+
+                <input type="number" id="quantidade" class="form-control" placeholder="Digite a quantidade">
+
+            </div>
+
+            <button onclick="verificarEstoque()" class="btn btn-primary w-100">
+
+                Verificar estoque
+
+            </button>
+
+            <div id="resultadoEstoque" class="resultado-estoque">
+
+                O resultado aparecerá aqui.
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>Desenvolvido por Maria Laura e Hyara</footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

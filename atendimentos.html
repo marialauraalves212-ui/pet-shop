@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Atendimentos - Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                Pet Shop
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="banhoetosa.html">
+                            Banho e Tosa
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="estoque.html">
+                            Estoque
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="vacinacao.html">
+                            Vacinação
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking.html">
+                            Ranking
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="atendimentos.html">
+                            Atendimentos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <div class="text-center">
+
+            <h1>Média de Atendimentos</h1>
+
+            <p class="lead">
+                Informe a quantidade de atendimentos realizados durante a semana.
+            </p>
+
+            <img src="img/sendoatendido.png" alt="" class="imagem-pets">
+
+        </div>
+
+
+        <div class="card p-4 mx-auto mt-4" style="max-width: 600px;">
+
+            <div class="mb-3">
+
+                <label for="segunda" class="form-label">
+                    Segunda-feira:
+                </label>
+
+                <input type="number" id="segunda" class="form-control"
+                    placeholder="Quantidade de atendimentos">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="terca" class="form-label">
+                    Terça-feira:
+                </label>
+
+                <input type="number" id="terca" class="form-control"
+                    placeholder="Quantidade de atendimentos">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="quarta" class="form-label">
+                    Quarta-feira:
+                </label>
+
+                <input type="number" id="quarta" class="form-control"
+                    placeholder="Quantidade de atendimentos">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="quinta" class="form-label">
+                    Quinta-feira:
+                </label>
+
+                <input type="number" id="quinta" class="form-control"
+                    placeholder="Quantidade de atendimentos">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label for="sexta" class="form-label">
+                    Sexta-feira:
+                </label>
+
+                <input type="number" id="sexta" class="form-control"
+                    placeholder="Quantidade de atendimentos">
+
+            </div>
+
+            <button onclick="calcularMedia()" class="btn btn-primary">
+                Calcular média
+            </button>
+
+            <div id="resultadoMedia" class="alert alert-info mt-4">
+                O resultado aparecerá aqui.
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>Desenvolvido por Maria Laura e Hyara</footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

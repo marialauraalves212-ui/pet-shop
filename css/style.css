@@ -1,0 +1,418 @@
+:root {
+    --azul: #9fcfe0;
+    --azul-claro: #e5f4f8;
+    --azul-hover: #86bdd0;
+
+    --rosa: #f3c4d2;
+    --rosa-claro: #fdf0f4;
+
+    --creme: #fffaf2;
+    --branco: #ffffff;
+
+    --texto: #5f6870;
+    --titulo: #547987;
+
+    --borda: #e3e8e8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--creme);
+    color: var(--texto);
+}
+
+main {
+    min-height: calc(100vh - 140px);
+}
+
+h1 {
+    color: var(--titulo);
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--titulo);
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: var(--azul);
+    padding: 14px 0;
+    box-shadow: 0 2px 8px rgba(100, 150, 165, 0.12);
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-left: 6px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: var(--azul-hover);
+}
+
+.navbar .nav-link.active {
+    background-color: var(--azul-hover);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--rosa);
+    border-color: var(--rosa);
+    color: #765965;
+    border-radius: 9px;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #eeb2c4;
+    border-color: #eeb2c4;
+}
+
+.form-label {
+    color: #68747a;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid var(--borda);
+    border-radius: 9px;
+    padding: 10px 12px;
+    background-color: var(--branco);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 0.2rem rgba(159, 207, 224, 0.25);
+}
+
+.imagem-pets {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagem-vacinacao {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imagem-estoque {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.boas-vindas {
+    padding-top: 75px;
+    padding-bottom: 55px;
+}
+
+.subtitulo {
+    color: #df9eb4;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.boas-vindas h1 {
+    color: var(--titulo);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: #707980;
+    font-size: 1.08rem;
+    max-width: 500px;
+}
+
+.mensagem {
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    padding: 35px 20px;
+    margin-bottom: 40px;
+}
+
+.mensagem h2 {
+    color: #7896a2;
+}
+
+.mensagem p {
+    color: #707980;
+}
+
+main.container.py-5 {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.formulario-pet {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(100, 140, 150, 0.10);
+}
+
+.formulario-pet h2 {
+    color: var(--titulo);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-informacao {
+    color: #7597a4;
+    margin-top: 20px;
+}
+
+.texto-informacao {
+    color: #707980;
+}
+
+.resultado-pet {
+    background-color: var(--azul-claro);
+    border-left: 4px solid var(--azul);
+    padding: 15px;
+    border-radius: 9px;
+}
+
+.vacinacao-pagina {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.vacinacao-titulo {
+    margin-bottom: 45px;
+}
+
+.vacinacao-titulo h1 {
+    color: var(--titulo);
+}
+
+.vacinacao-titulo p {
+    color: #707980;
+}
+
+.vacinacao-pagina .col-md-5 h2 {
+    color: #7597a4;
+    margin-top: 20px;
+}
+
+.vacinacao-pagina .col-md-5 p {
+    color: #707980;
+}
+
+.vacinacao-formulario {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(100, 140, 150, 0.10);
+}
+
+.vacinacao-formulario h2 {
+    color: var(--titulo);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.resultado-vacinacao {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--azul-claro);
+    border-left: 4px solid var(--azul);
+    border-radius: 9px;
+}
+
+.estoque-minimalista {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.estoque-titulo {
+    margin-bottom: 40px;
+}
+
+.estoque-titulo h1 {
+    color: var(--titulo);
+}
+
+.estoque-titulo p {
+    color: #707980;
+}
+
+.estoque-conteudo {
+    background-color: var(--branco);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(100, 140, 150, 0.10);
+}
+
+.estoque-conteudo h2 {
+    text-align: center;
+    color: var(--titulo);
+    margin-bottom: 25px;
+}
+
+.tabela-racao {
+    margin-bottom: 25px;
+    vertical-align: middle;
+}
+
+.tabela-racao thead {
+    background-color: var(--azul-claro);
+    color: var(--titulo);
+}
+
+.tabela-racao th,
+.tabela-racao td {
+    padding: 13px;
+    text-align: center;
+}
+
+.tabela-racao tbody tr:hover {
+    background-color: var(--rosa-claro);
+}
+
+.tabela-racao input[type="radio"] {
+    accent-color: #e4aabd;
+    transform: scale(1.1);
+}
+
+.resultado-estoque {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--azul-claro);
+    border-left: 4px solid var(--azul);
+    border-radius: 9px;
+}
+
+main.container.py-5 h1 {
+    color: var(--titulo);
+}
+
+main.container.py-5 .lead {
+    color: #707980;
+}
+
+main.container.py-5 .card {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(100, 140, 150, 0.10);
+}
+
+#resultadoRanking {
+    background-color: var(--azul-claro);
+    border: 1px solid #c9e4ed;
+    color: #5f7078;
+    border-radius: 9px;
+}
+
+main.container.py-5 h1 {
+    color: var(--titulo);
+}
+
+main.container.py-5 .lead {
+    color: #707980;
+}
+
+main.container.py-5 .card {
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(100, 140, 150, 0.10);
+}
+
+#resultadoMedia {
+    background-color: var(--rosa-claro);
+    border: 1px solid #f0d2dc;
+    color: #6d6267;
+    border-radius: 9px;
+}
+
+footer {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .navbar .nav-link {
+        margin-left: 0;
+        margin-top: 3px;
+    }
+
+    .boas-vindas {
+        padding-top: 45px;
+        text-align: center;
+    }
+
+    .boas-vindas h1 {
+        font-size: 2.2rem;
+    }
+
+    .descricao {
+        margin: 0 auto;
+    }
+
+    .formulario-pet,
+    .vacinacao-formulario,
+    .estoque-conteudo,
+    .card {
+        padding: 20px;
+    }
+
+    .vacinacao-pagina,
+    .estoque-minimalista {
+        padding-top: 40px;
+    }
+
+    .tabela-racao th,
+    .tabela-racao td {
+        padding: 9px 5px;
+        font-size: 0.9rem;
+    }
+
+    .imagem-pets,
+    .imagem-vacinacao,
+    .imagem-estoque {
+        max-width: 300px;
+    }
+
+}
